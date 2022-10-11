@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>KA$HL£SS</title>
+    
+</head>
+<body>
+<nav class="bg-yellow-300 text-black-600 flex">
+    <img src="logofinal.png" class="pt-1 pl-4" style="width:100px;height:90px">
+  
+    <ul class="py-9 pl-80 flex space-x-40 font-bold">
+        
+        <li class="cursor-pointer hover:underline">Home</li>
+        <li class="cursor-pointer hover:underline">Services</li>
+        <li class="cursor-pointer hover:underline">FAQ</li>
+        <li class="cursor-pointer hover:underline"><a href="contact.html">Contact Us</a></li>
+        
+    </ul>
+</nav>
+<main class="bg-black flex items-center">
+    <div class="main bg-black h-100 text-yellow-300">
+        <div class="text-6xl">
+            <p class="font-bold pt-24 pl-7">KA$HL£SS makes payments easier</p>
+            <div class="text-2xl">
+                <p class="pt-7 pl-7 w-1/1 font">With the KA$HL£SS app, recharge & pay bills, book flights & movie tickets, open a savings account, invest in stocks & mutual funds, and do a lot more!
+                </p>
+                <div class="buttons pt-11 pl-7">
+                    <button class="text-xl bg-yellow-300 text-black px-3 py-2 pl-3 rounded-3xl font-bold hover:underline hover:bg-white ">Coming Soon!</button>
+                    <div class="launch-time flex space-x-11 py-20 pt-9">
+                        <div>
+                            <p id="days" class="text-5xl">00</p>
+                            <span class="text-xl pl-4">Days</span>
+                        </div>
+                        <div>
+                            <p id="hours" class="text-5xl">00</p>
+                            <span class="text-xl">Hours</span>
+                        </div>
+                        <div>
+                            <p id="minutes" class="text-5xl pl-2">00</p>
+                            <span class="text-xl">Minutes</span>
+                        </div>
+                        <div>
+                            <p id="seconds" class="text-5xl pl-2">00</p>
+                            <span class="text-xl">Seconds</span>
+                        </div>
+                        <script>
+                            var countDownDate=new Date("April 30,2023 00:00:00").getTime();
+                            var x=setInterval(function(){
+                                var now=new Date().getTime();
+                                var distance=countDownDate-now;
+                                var days=Math.floor(distance/(1000*60*60*24));
+                                var hours=Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+                                var minutes=Math.floor((distance%(1000*60*60))/(1000*60));
+                                var seconds=Math.floor((distance%(1000*60))/1000);
+                                document.getElementById("days").innerHTML=days;
+                                document.getElementById("hours").innerHTML=hours;
+                                document.getElementById("minutes").innerHTML=minutes;
+                                document.getElementById("seconds").innerHTML=seconds;
+                            },1000);
+            
+                        </script>
+
+                        </div>
+                        <div class="buttons pl-1 pb-6">
+                            
+                            <input type="email" style="width: 350px;" placeholder="           Enter your email" class="text-black rounded-2xl pl-3">
+                           
+                            <button class="pt-2 text-xl bg-yellow-300 text-black px-3 py-2 pl-3 rounded-3xl font-bold hover:underline hover:bg-white ">Notify me!</button>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+                
+            </div>
+            
+        </div>
+
+    </div>
+    <div>
+        
+    </div>
+    <div class="flex justify-end pb-20">
+        <img src="cartoon.png" style="width:900px;height:385px">
+    </div>
+   
+</main>
+
+</body>
+</html>
