@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <title>KA$HL£SS</title>
     
 </head>
@@ -61,6 +62,21 @@
                                 document.getElementById("minutes").innerHTML=minutes;
                                 document.getElementById("seconds").innerHTML=seconds;
                             },1000);
+                            
+                            function sendEmail() {
+      Email.send({
+        Host: "smtp.gmail.com",
+        Username: "kashlesskaro@gmail.com",
+        Password: "kashless@2022",
+        To: 'hemantsakunde@gmail.com',
+        From: "kashlesskaro@gmail.com",
+        Subject: "Test Mail",
+        Body: "Thank You for believing in us",
+      })
+        .then(function (message) {
+          alert("mail sent successfully")
+        });
+    }
             
                         </script>
 
@@ -69,7 +85,7 @@
                             
                             <input type="email" style="width: 350px;" placeholder="           Enter your email" class="text-black rounded-2xl pl-3">
                            
-                            <button class="pt-2 text-xl bg-yellow-300 text-black px-3 py-2 pl-3 rounded-3xl font-bold hover:underline hover:bg-white ">Notify me!</button>
+                            <button class="pt-2 text-xl bg-yellow-300 text-black px-3 py-2 pl-3 rounded-3xl font-bold hover:underline hover:bg-white " onclick="sendEmail()">Notify me!</button>
 
                         </div>
 
