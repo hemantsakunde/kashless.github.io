@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>"https://cdn-tailwindcss.vercel.app/"</script>
+    
+    <title>KA$HL£SS</title>
+    
+</head>
+<body>
+<nav class="bg-yellow-300 text-black-600 flex">
+    <img src="logofinal.png" class="pt-1 pl-4" style="width:100px;height:90px">
+  
+    <ul class="py-9 pl-80 flex space-x-40 font-bold">
+        
+        <li class="cursor-pointer hover:scale-110">Home</li>
+        <li class="cursor-pointer hover:scale-110 animate-bounce h-3" ><a href="whatsnew.html">Whats New?</a></li>
+        
+        <li class="cursor-pointer hover:scale-110"><a href="faq.html">FAQ</a></li>
+        <li class="cursor-pointer hover:scale-110"><a href="contact.html">Contact Us</a></li>
+        
+    </ul>
+</nav>
+<main class="bg-black flex items-center">
+    <div class="main bg-black h-100 text-yellow-300">
+        <div class="text-6xl">
+            <p class="font-bold pt-24 pl-7">KA$HL£SS will make payments easier</p>
+            <div class="text-2xl">
+                <p class="pt-7 pl-7 w-1/1 font">With the KA$HL£SS app, your could soon recharge & pay bills, book flights & movie tickets, open a savings account, invest in stocks & mutual funds, and do a lot more!
+                </p>
+                <div class="buttons pt-11 pl-7">
+                    <button class="text-xl bg-yellow-300 text-black px-3 py-2 pl-3 rounded-3xl font-bold hover:bg-white hover:scale-110 ">Coming Soon!</button>
+                    <div class="launch-time flex space-x-11 py-20 pt-9">
+                        <div>
+                            <p id="days" class="text-5xl">00</p>
+                            <span class="text-xl pl-4">Days</span>
+                        </div>
+                        <div>
+                            <p id="hours" class="text-5xl">00</p>
+                            <span class="text-xl">Hours</span>
+                        </div>
+                        <div>
+                            <p id="minutes" class="text-5xl pl-2">00</p>
+                            <span class="text-xl">Minutes</span>
+                        </div>
+                        <div>
+                            <p id="seconds" class="text-5xl pl-2">00</p>
+                            <span class="text-xl">Seconds</span>
+                        </div>
+                        <script>
+                            var countDownDate=new Date("April 30,2023 00:00:00").getTime();
+                            var x=setInterval(function(){
+                                var now=new Date().getTime();
+                                var distance=countDownDate-now;
+                                var days=Math.floor(distance/(1000*60*60*24));
+                                var hours=Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+                                var minutes=Math.floor((distance%(1000*60*60))/(1000*60));
+                                var seconds=Math.floor((distance%(1000*60))/1000);
+                                document.getElementById("days").innerHTML=days;
+                                document.getElementById("hours").innerHTML=hours;
+                                document.getElementById("minutes").innerHTML=minutes;
+                                document.getElementById("seconds").innerHTML=seconds;
+                            },1000);
+            
+                        </script>
+
+                        </div>
+                        <div class="buttons pl-1 pb-6">
+                            
+                            <input type="email" style="width: 350px;" placeholder="           Enter your email" class="text-black rounded-2xl pl-3">
+                           
+                            <button class="pt-2 text-xl bg-yellow-300 text-black px-3 py-2 pl-4 rounded-3xl font-bold hover:bg-white">Notify me!</button>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            
+            </div>
+            
+        </div>
+
+    </div>
+    <div>
+        
+    </div>
+    <div class="flex justify-end">
+    
+        <img src="robot.jpg" style="width:1000px;height:580px">
+    
+        
+    </div>
+   
+</main>
+
+
+<section id="recharge" class="text-gray-600 body-font bg-yellow-300">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
+     <h1 class="text-5xl font-bold title-font mb-2 text-black">Recharge & Pay Bills on KA$HL£SS</h1>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="p-6 rounded-lg bg-black hover:scale-105">
+            <div class="w-12 h-12 inline-flex items-center justify-center bg-white mb-4"> 
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+               <img src="phone.png">
+              </svg>
+            </div>
+            <h2 class="text-xl text-yellow-300 font-medium title-font mb-2">Recharge or pay mobile bill</h2>
+            <p class="leading-relaxed text-base text-yellow-200">Instant and Easy Online Mobile Recharge at KA$HL£SS with assured cashback.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="p-6 rounded-lg bg-black hover:scale-105">
+            <div class="w-12 h-12 inline-flex items-center justify-center  bg-white mb-4">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+               
+                <img src="rent.png">
+              </svg>
+            </div>
+            <h2 class="text-xl text-yellow-300 font-medium title-font mb-2">Rent Payment</h2>
+            <p class="leading-relaxed text-base text-yellow-200">Pay house rent, shop rent, society maintenance and broker payments.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="p-6 rounded-lg bg-black hover:scale-105">
+            <div class="w-12 h-12 inline-flex items-center justify-center rounded bg-white mb-4">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                <img src="bulb.png">
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <h2 class="text-xl text-yellow-300 font-medium title-font mb-2">Pay Electricity Bill</h2>
+            <p class="leading-relaxed text-base text-yellow-200">No need to stand in long queues when you have the KA$HL£SS app.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="p-6 rounded-lg bg-black hover:scale-105">
+            <div class="w-12 h-12 inline-flex items-center justify-center bg-white mb-4">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+              <img src="dish.png">
+              </svg>
+            </div>
+            <h2 class="text-xl text-yellow-300 font-medium title-font mb-2">Recharge DTH Connection</h2>
+            <p class="leading-relaxed text-base text-yellow-200">Instantly Recharge Your Tata Play, Airtel Digital TV, Dish TV, D2H and more.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="p-6 rounded-lg bg-black hover:scale-105">
+            <div class="w-12 h-12 inline-flex items-center justify-center bg-white mb-4">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                <img src="gas.png">
+              </svg>
+            </div>
+            <h2 class="text-xl text-yellow-300 font-medium title-font mb-2">Book Gas Cylinder</h2>
+            <p class="leading-relaxed text-base text-yellow-200">Book LPG gas cylinder online on the KA$HL£SS app and get guaranteed cashback.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="p-6 rounded-lg bg-black hover:scale-105">
+            <div class="w-12 h-12 inline-flex items-center justify-center bg-white mb-4">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                <img src="creditcard.png">
+              </svg>
+            </div>
+            <h2 class="text-xl text-yellow-300 font-medium title-font mb-2">Pay Credit Card bill</h2>
+            <p class="leading-relaxed text-base text-yellow-200">Pay for all Visa, Mastercard, American Express, Diners & Rupay Credit Cards issued by all major banks.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="ticketbooking" class="text-black body-font bg-black">
+    <div id="Services" class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
+     <h1 class="text-5xl font-bold title-font mb-2 text-yellow-300">Book tickets on KA$HL£SS</h1>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="p-6 rounded-lg bg-yellow-300 hover:scale-105">
+            <div class="w-12 h-12 inline-flex items-center justify-center bg-yellow-300 mb-4"> 
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+               <img src="cinema.png">
+              </svg>
+            </div>
+            <h2 class="text-xl text-black font-medium title-font mb-2">Movie Tickets</h2>
+            <p class="leading-relaxed text-base text-black">Now don't miss out on any movie whether it is Hollywood, Bollywood or Regional.
+            </p>
+          </div>
+        </div>
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="p-6 rounded-lg bg-yellow-300 hover:scale-105">
+            <div class="w-12 h-12 inline-flex items-center justify-center  bg-yellow-300 mb-4">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+               
+                <img src="flight.png">
+              </svg>
+            </div>
+            <h2 class="text-xl text-black font-medium title-font mb-2">Flight Tickets</h2>
+            <p class="leading-relaxed text-base text-black"> Enjoy a hassle-free flight ticket booking experience
+                 by getting your tickets booked securely, in minutes.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="p-6 rounded-lg bg-yellow-300 hover:scale-105">
+            <div class="w-12 h-12 inline-flex items-center justify-center rounded bg-yellow-300 mb-4">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                <img src="bus.png">
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <h2 class="text-xl text-black font-medium title-font mb-2">Bus Tickets</h2>
+            <p class="leading-relaxed text-base text-black">Now book your bus tickets on KA$HL£SS and make your bus booking experience smoother and more affordable.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="p-6 rounded-lg bg-yellow-300 hover:scale-105">
+            <div class="w-12 h-12 inline-flex items-center justify-center bg-yellow-300 mb-4">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+              <img src="train.png">
+              </svg>
+            </div>
+            <h2 class="text-xl text-black font-medium title-font mb-2">Train Tickets</h2>
+            <p class="leading-relaxed text-base text-black">Online railway reservation is now easy, quick and secure with KA$HL£SS.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="p-6 rounded-lg bg-yellow-300 hover:scale-105">
+            <div class="w-12 h-12 inline-flex items-center justify-center bg-yellow-300 mb-4">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                <img src="event.png">
+              </svg>
+            </div>
+            <h2 class="text-xl text-black font-medium title-font mb-2">Event Tickets</h2>
+            <p class="leading-relaxed text-base text-black">From stand ups to dramas and much more! Book tickets for any event quickly.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="p-6 rounded-lg bg-yellow-300 hover:scale-105">
+            <div class="w-12 h-12 inline-flex items-center justify-center bg-yellow-300 mb-4">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                <img src="metro.png">
+              </svg>
+            </div>
+            <h2 class="text-xl text-black font-medium title-font mb-2">Metro tickets</h2>
+            <p class="leading-relaxed text-base text-black">Skip the queue! Get the metro QR ticket on mobile or buy the Digital Metro Card and commute easily.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <section id="payments" class="text-gray-600 body-font bg-yellow-300">
+      <div class="container mx-auto flex px-5 py-40 md:flex-row flex-col items-center">
+        <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+          <h1 class="title-font text-5xl mb-4 font-bold text-black">Pay anyone directly from your bank account.
+       
+          </h1>
+          <p class="mb-8 leading-relaxed text-xl text-black">Pay anyone, everywhere. Make contactless & secure payments in-stores or online using KA$HL£SS Wallet or Directly from your Bank Account. Plus, send & receive money from anyone.</p>
+        
+        </div>
+        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+          <img class="object-cover object-center rounded hover:scale-105" alt="hero" src="moneytransfer.png">
+        </div>
+      </div>
+    </section>
+
+    <section id="loan" class="text-gray-600 body-font bg-black">
+      <div class="container mx-auto flex px-5 py-40 md:flex-row flex-col items-center">
+        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+          <img class="object-cover object-center rounded hover:scale-105" alt="hero" src="loan.jpg">
+        </div>
+        <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+          <h1 class="title-font text-5xl mb-4 font-bold text-yellow-300">Get a Personal Loan in 2 Minutes.
+            
+          </h1>
+          <p class="mb-8 leading-relaxed text-yellow-200 text-xl">KA$HL£SS will offer India's quickest multi-purpose, hassle-free loan. It is 100% digital, transparent and paperless.</p>
+          <div class="flex justify-center">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-gray-600 body-font bg-yellow-300">
+      <div class="container px-5 py-20 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+        <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+          <img src="logofinal.png" class="pl-4" style="width:150px;height:150px">
+        </div>
+        <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="title-font font-bold text-black tracking-widest text-sm mb-3">HEADER</h2>
+            <nav class="list-none mb-10">
+              <li>
+                <a class="text-black cursor-pointer hover:underline">Home</a>
+              </li>
+              <li>
+                <a href="whatsnew.html" class="text-black cursor-pointer hover:underline">Whats New?</a>
+              </li>
+              <li>
+                <a href="faq.html" class="text-black cursor-pointer hover:underline">FAQ</a>
+              </li>
+              <li>
+                <a href="contact.html" class="text-black cursor-pointer hover:underline">Contact Us</a>
+              </li>
+            </nav>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="title-font font-bold text-black tracking-widest text-sm mb-3">SERVICES</h2>
+            <nav class="list-none mb-10">
+              <li>
+                <a href="#recharge" class="text-black cursor-pointer hover:underline">Recharge
+                </a>
+              </li>
+              <li>
+                <a href="#ticketbooking" class="text-black cursor-pointer hover:underline">Ticket Booking
+                </a>
+              </li>
+              <li>
+                <a href="#payments" class="text-black cursor-pointer hover:underline">Payments
+                </a>
+              </li>
+              <li>
+                <a href="#loan" class="text-black cursor-pointer hover:underline">Loan
+                </a>
+              </li>
+            </nav>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="title-font font-bold text-black tracking-widest text-sm mb-3">SOCIAL MEDIA</h2>
+            <nav class="list-none mb-10">
+                <a href="https://www.instagram.com/kashlessupi" class="text-black cursor-pointer hover:underline">Instagram</a>
+            </li>
+              <li>
+                <a href="https://twitter.com/SakundeHemant" class="text-black cursor-pointer hover:underline">Twitter</a>
+              </li>
+            
+            </nav>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <img src="googleplay.png" alt="" srcset="">
+          </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    </body>
+</html> 
